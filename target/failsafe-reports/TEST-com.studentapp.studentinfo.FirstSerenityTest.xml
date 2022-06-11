@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.studentapp.studentinfo.FirstSerenityTest" time="4.263" tests="8" errors="2" skipped="1" failures="1">
+<testsuite name="com.studentapp.studentinfo.FirstSerenityTest" time="0.18" tests="8" errors="2" skipped="1" failures="1">
   <properties>
     <property name="idea.version" value="2021.2.4"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="cucumber.options" value="--tags @SMOKE"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\bin"/>
     <property name="java.vm.version" value="25.121-b13"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
@@ -46,7 +47,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_121\jre"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.2.4 clean verify serenity:aggregate"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.2.4 clean verify -Dcucumber.options=--tags @SMOKE serenity:aggregate"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -63,9 +64,9 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="test001" classname="com.studentapp.studentinfo.FirstSerenityTest" time="4.086"/>
+  <testcase name="test001" classname="com.studentapp.studentinfo.FirstSerenityTest" time="0.139"/>
   <testcase name="thisIsManual" classname="com.studentapp.studentinfo.FirstSerenityTest" time="0"/>
-  <testcase name="thisIsCompromised" classname="com.studentapp.studentinfo.FirstSerenityTest" time="0.01">
+  <testcase name="thisIsCompromised" classname="com.studentapp.studentinfo.FirstSerenityTest" time="0.001">
     <error message="E:\file.txt (The system cannot find the path specified)" type="java.io.FileNotFoundException"><![CDATA[java.io.FileNotFoundException: E:\file.txt (The system cannot find the path specified)
 	at java.io.FileInputStream.open0(Native Method)
 	at java.io.FileInputStream.open(FileInputStream.java:195)
@@ -77,14 +78,14 @@
   <testcase name="thisIsASkipped" classname="com.studentapp.studentinfo.FirstSerenityTest" time="0">
     <skipped/>
   </testcase>
-  <testcase name="thisIsATestWithError" classname="com.studentapp.studentinfo.FirstSerenityTest" time="0.001">
+  <testcase name="thisIsATestWithError" classname="com.studentapp.studentinfo.FirstSerenityTest" time="0">
     <error message="/ by zero" type="java.lang.ArithmeticException">java.lang.ArithmeticException: / by zero
 	at com.studentapp.studentinfo.FirstSerenityTest.thisIsATestWithError(FirstSerenityTest.java:56)
 </error>
   </testcase>
   <testcase name="thisIsAPending" classname="com.studentapp.studentinfo.FirstSerenityTest" time="0"/>
-  <testcase name="getAllStudents" classname="com.studentapp.studentinfo.FirstSerenityTest" time="0.102"/>
-  <testcase name="thisIsFailingTest" classname="com.studentapp.studentinfo.FirstSerenityTest" time="0.064">
+  <testcase name="getAllStudents" classname="com.studentapp.studentinfo.FirstSerenityTest" time="0.016"/>
+  <testcase name="thisIsFailingTest" classname="com.studentapp.studentinfo.FirstSerenityTest" time="0.024">
     <failure message="1 expectation failed.&#10;Expected status code &lt;201&gt; but was &lt;200&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 1 expectation failed.
 Expected status code <201> but was <200>.
 
@@ -117,14 +118,14 @@ Expected status code <201> but was <200>.
     <system-out><![CDATA[HTTP/1.1 200 
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
-Date: Sat, 04 Jun 2022 16:02:09 GMT
+Date: Sat, 11 Jun 2022 13:47:59 GMT
 
 [
     {
         "id": 1,
         "firstName": "Vernon",
         "lastName": "Harper",
-        "email": "primetesting@gmail.com",
+        "email": "egestas.rhoncus.Proin@massaQuisqueporttitor.org",
         "programme": "Financial Analysis",
         "courses": [
             "Accounting",
@@ -1334,42 +1335,1109 @@ Date: Sat, 04 Jun 2022 16:02:09 GMT
     },
     {
         "id": 101,
-        "firstName": "PrimUser78640",
-        "lastName": "PrimeUser2454",
-        "email": "72399xyz@gmail.com",
-        "programme": "Api Testing",
+        "firstName": "Myles",
+        "lastName": "Beacon",
+        "email": "mbeacon0@ca.gov",
+        "programme": "Manual Testing",
         "courses": [
-            "Scala",
-            "Java"
-        ]
-    },
-    {
-        "id": 102,
-        "firstName": "PrimUser40878",
-        "lastName": "PrimeUser9287",
-        "email": "98542xyz@gmail.com",
-        "programme": "Api Testing",
-        "courses": [
-            "Scala",
-            "Java"
+            "Cucumber",
+            "Rest Assured"
         ]
     },
     {
         "id": 103,
-        "firstName": "PrimUser15711",
-        "lastName": "PrimeUser13564",
-        "email": "96917xyz@gmail.com",
-        "programme": "Api Testing",
+        "firstName": "Mohandas",
+        "lastName": "McPhee",
+        "email": "mmcphee1@blogs.com",
+        "programme": "Accounts",
         "courses": [
-            "Scala",
-            "Java"
+            "Java",
+            "C##"
         ]
     },
     {
         "id": 104,
-        "firstName": "PrimUser44015",
-        "lastName": "PrimeUser5766",
-        "email": "79978xyz@gmail.com",
+        "firstName": "Dorisa",
+        "lastName": "Chidwick",
+        "email": "dchidwick2@issuu.com",
+        "programme": "Automation Testing",
+        "courses": [
+            "Selenium",
+            "C##"
+        ]
+    },
+    {
+        "id": 105,
+        "firstName": "Rustin",
+        "lastName": "Wapplington",
+        "email": "rwapplington3@omniture.com",
+        "programme": "Automation Testing",
+        "courses": [
+            "Cucumber",
+            "C##"
+        ]
+    },
+    {
+        "id": 106,
+        "firstName": "Luce",
+        "lastName": "Chubb",
+        "email": "lchubb4@boston.com",
+        "programme": "Accounts",
+        "courses": [
+            "Selenium",
+            "Appium"
+        ]
+    },
+    {
+        "id": 107,
+        "firstName": "Francine",
+        "lastName": "Lifton",
+        "email": "flifton5@independent.co.uk",
+        "programme": "Manual Testing",
+        "courses": [
+            "Selenium",
+            "Appium"
+        ]
+    },
+    {
+        "id": 108,
+        "firstName": "Dan",
+        "lastName": "Feyer",
+        "email": "dfeyer6@qq.com",
+        "programme": "Accounts",
+        "courses": [
+            "Selenium",
+            "Appium"
+        ]
+    },
+    {
+        "id": 109,
+        "firstName": "Leeanne",
+        "lastName": "Drewe",
+        "email": "ldrewe7@goo.ne.jp",
+        "programme": "Accounts",
+        "courses": [
+            "Selenium",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 110,
+        "firstName": "Terrence",
+        "lastName": "Tipple",
+        "email": "ttipple8@wsj.com",
+        "programme": "Automation Testing",
+        "courses": [
+            "Selenium",
+            "C##"
+        ]
+    },
+    {
+        "id": 111,
+        "firstName": "Harmonia",
+        "lastName": "Scroxton",
+        "email": "hscroxton9@taobao.com",
+        "programme": "Automation Testing",
+        "courses": [
+            "Java",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 112,
+        "firstName": "Anna-diane",
+        "lastName": "Jellman",
+        "email": "ajellmana@theatlantic.com",
+        "programme": "Automation Testing",
+        "courses": [
+            "Java",
+            "C##"
+        ]
+    },
+    {
+        "id": 113,
+        "firstName": "Laurianne",
+        "lastName": "Battey",
+        "email": "lbatteyb@acquirethisname.com",
+        "programme": "Automation Testing",
+        "courses": [
+            "Cucumber",
+            "C##"
+        ]
+    },
+    {
+        "id": 114,
+        "firstName": "Verena",
+        "lastName": "Slimings",
+        "email": "vslimingsc@businesswire.com",
+        "programme": "Automation Testing",
+        "courses": [
+            "Selenium",
+            "Appium"
+        ]
+    },
+    {
+        "id": 115,
+        "firstName": "Patrizius",
+        "lastName": "Naden",
+        "email": "pnadend@tuttocitta.it",
+        "programme": "Accounts",
+        "courses": [
+            "Selenium",
+            "C##"
+        ]
+    },
+    {
+        "id": 116,
+        "firstName": "Marin",
+        "lastName": "Middlemass",
+        "email": "mmiddlemasse@vistaprint.com",
+        "programme": "Automation Testing",
+        "courses": [
+            "Java",
+            "Appium"
+        ]
+    },
+    {
+        "id": 117,
+        "firstName": "Beatrice",
+        "lastName": "Spoward",
+        "email": "bspowardf@wufoo.com",
+        "programme": "Accounts",
+        "courses": [
+            "Selenium",
+            "C##"
+        ]
+    },
+    {
+        "id": 118,
+        "firstName": "John",
+        "lastName": "Menhenitt",
+        "email": "jmenhenittg@usa.gov",
+        "programme": "Automation Testing",
+        "courses": [
+            "Java",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 119,
+        "firstName": "Jeramey",
+        "lastName": "Brodeau",
+        "email": "jbrodeauh@people.com.cn",
+        "programme": "Automation Testing",
+        "courses": [
+            "Java",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 120,
+        "firstName": "Eugine",
+        "lastName": "Tatam",
+        "email": "etatami@xinhuanet.com",
+        "programme": "Automation Testing",
+        "courses": [
+            "Selenium",
+            "C##"
+        ]
+    },
+    {
+        "id": 121,
+        "firstName": "Dorothea",
+        "lastName": "Dunford",
+        "email": "ddunfordj@lycos.com",
+        "programme": "Accounts",
+        "courses": [
+            "Selenium",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 122,
+        "firstName": "Bridget",
+        "lastName": "Beteriss",
+        "email": "bbeterissk@altervista.org",
+        "programme": "Accounts",
+        "courses": [
+            "Cucumber",
+            "Appium"
+        ]
+    },
+    {
+        "id": 123,
+        "firstName": "Germayne",
+        "lastName": "Foyster",
+        "email": "gfoysterl@qq.com",
+        "programme": "Manual Testing",
+        "courses": [
+            "Cucumber",
+            "Appium"
+        ]
+    },
+    {
+        "id": 124,
+        "firstName": "Rhoda",
+        "lastName": "Drinkwater",
+        "email": "rdrinkwaterm@is.gd",
+        "programme": "Manual Testing",
+        "courses": [
+            "Java",
+            "C##"
+        ]
+    },
+    {
+        "id": 125,
+        "firstName": "Gardiner",
+        "lastName": "Mitcham",
+        "email": "gmitchamn@opensource.org",
+        "programme": "Accounts",
+        "courses": [
+            "Selenium",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 126,
+        "firstName": "Electra",
+        "lastName": "Lyndon",
+        "email": "elyndono@fastcompany.com",
+        "programme": "Automation Testing",
+        "courses": [
+            "Selenium",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 127,
+        "firstName": "Norton",
+        "lastName": "Cotty",
+        "email": "ncottyp@hc360.com",
+        "programme": "Manual Testing",
+        "courses": [
+            "Selenium",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 128,
+        "firstName": "Jard",
+        "lastName": "Iacovolo",
+        "email": "jiacovoloq@fema.gov",
+        "programme": "Accounts",
+        "courses": [
+            "Selenium",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 129,
+        "firstName": "Trudi",
+        "lastName": "Deny",
+        "email": "tdenyr@oaic.gov.au",
+        "programme": "Accounts",
+        "courses": [
+            "Java",
+            "Appium"
+        ]
+    },
+    {
+        "id": 130,
+        "firstName": "Massimo",
+        "lastName": "Powdrell",
+        "email": "mpowdrells@google.com.br",
+        "programme": "Accounts",
+        "courses": [
+            "Java",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 131,
+        "firstName": "Berton",
+        "lastName": "Rosenblath",
+        "email": "brosenblatht@examiner.com",
+        "programme": "Manual Testing",
+        "courses": [
+            "Selenium",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 132,
+        "firstName": "Melany",
+        "lastName": "Gaskins",
+        "email": "mgaskinsu@lycos.com",
+        "programme": "Accounts",
+        "courses": [
+            "Java",
+            "C##"
+        ]
+    },
+    {
+        "id": 133,
+        "firstName": "Nick",
+        "lastName": "Flanaghan",
+        "email": "nflanaghanv@miibeian.gov.cn",
+        "programme": "Manual Testing",
+        "courses": [
+            "Java",
+            "C##"
+        ]
+    },
+    {
+        "id": 134,
+        "firstName": "Estevan",
+        "lastName": "Dittson",
+        "email": "edittsonw@ow.ly",
+        "programme": "Automation Testing",
+        "courses": [
+            "Java",
+            "Appium"
+        ]
+    },
+    {
+        "id": 135,
+        "firstName": "Latisha",
+        "lastName": "Cobbledick",
+        "email": "lcobbledickx@t-online.de",
+        "programme": "Accounts",
+        "courses": [
+            "Cucumber",
+            "C##"
+        ]
+    },
+    {
+        "id": 136,
+        "firstName": "Camilla",
+        "lastName": "Scherer",
+        "email": "cscherery@forbes.com",
+        "programme": "Automation Testing",
+        "courses": [
+            "Selenium",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 137,
+        "firstName": "Eloise",
+        "lastName": "Fransseni",
+        "email": "efransseniz@tiny.cc",
+        "programme": "Automation Testing",
+        "courses": [
+            "Java",
+            "C##"
+        ]
+    },
+    {
+        "id": 138,
+        "firstName": "Phil",
+        "lastName": "Bassill",
+        "email": "pbassill10@abc.net.au",
+        "programme": "Automation Testing",
+        "courses": [
+            "Cucumber",
+            "C##"
+        ]
+    },
+    {
+        "id": 139,
+        "firstName": "Sapphira",
+        "lastName": "Penburton",
+        "email": "spenburton11@washington.edu",
+        "programme": "Manual Testing",
+        "courses": [
+            "Selenium",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 140,
+        "firstName": "Romain",
+        "lastName": "Lamperd",
+        "email": "rlamperd12@scientificamerican.com",
+        "programme": "Manual Testing",
+        "courses": [
+            "Selenium",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 141,
+        "firstName": "Boycey",
+        "lastName": "Bryning",
+        "email": "bbryning13@vinaora.com",
+        "programme": "Manual Testing",
+        "courses": [
+            "Java",
+            "Appium"
+        ]
+    },
+    {
+        "id": 142,
+        "firstName": "Adoree",
+        "lastName": "De la Eglise",
+        "email": "adelaeglise14@japanpost.jp",
+        "programme": "Automation Testing",
+        "courses": [
+            "Java",
+            "Appium"
+        ]
+    },
+    {
+        "id": 143,
+        "firstName": "Laverne",
+        "lastName": "Vane",
+        "email": "lvane15@oakley.com",
+        "programme": "Accounts",
+        "courses": [
+            "Java",
+            "C##"
+        ]
+    },
+    {
+        "id": 144,
+        "firstName": "Christabella",
+        "lastName": "Meader",
+        "email": "cmeader16@squarespace.com",
+        "programme": "Manual Testing",
+        "courses": [
+            "Selenium",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 145,
+        "firstName": "Lin",
+        "lastName": "Trebbett",
+        "email": "ltrebbett17@google.es",
+        "programme": "Accounts",
+        "courses": [
+            "Selenium",
+            "C##"
+        ]
+    },
+    {
+        "id": 146,
+        "firstName": "Dari",
+        "lastName": "Tremblett",
+        "email": "dtremblett18@squarespace.com",
+        "programme": "Automation Testing",
+        "courses": [
+            "Selenium",
+            "C##"
+        ]
+    },
+    {
+        "id": 147,
+        "firstName": "Herbert",
+        "lastName": "Daventry",
+        "email": "hdaventry19@squarespace.com",
+        "programme": "Automation Testing",
+        "courses": [
+            "Java",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 148,
+        "firstName": "Adrienne",
+        "lastName": "Wylder",
+        "email": "awylder1a@homestead.com",
+        "programme": "Automation Testing",
+        "courses": [
+            "Cucumber",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 149,
+        "firstName": "Hobart",
+        "lastName": "Braunes",
+        "email": "hbraunes1b@wordpress.com",
+        "programme": "Manual Testing",
+        "courses": [
+            "Cucumber",
+            "Appium"
+        ]
+    },
+    {
+        "id": 150,
+        "firstName": "Starlin",
+        "lastName": "Wimmer",
+        "email": "swimmer1c@blogspot.com",
+        "programme": "Automation Testing",
+        "courses": [
+            "Selenium",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 151,
+        "firstName": "Rusty",
+        "lastName": "Kerwick",
+        "email": "rkerwick1d@hatena.ne.jp",
+        "programme": "Manual Testing",
+        "courses": [
+            "Cucumber",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 152,
+        "firstName": "Dorian",
+        "lastName": "Heeney",
+        "email": "dheeney1e@cnn.com",
+        "programme": "Manual Testing",
+        "courses": [
+            "Java",
+            "C##"
+        ]
+    },
+    {
+        "id": 153,
+        "firstName": "Eunice",
+        "lastName": "Stille",
+        "email": "estille1f@skyrock.com",
+        "programme": "Accounts",
+        "courses": [
+            "Java",
+            "C##"
+        ]
+    },
+    {
+        "id": 154,
+        "firstName": "Toddy",
+        "lastName": "Girod",
+        "email": "tgirod1g@people.com.cn",
+        "programme": "Manual Testing",
+        "courses": [
+            "Selenium",
+            "Appium"
+        ]
+    },
+    {
+        "id": 155,
+        "firstName": "Helen",
+        "lastName": "Antonchik",
+        "email": "hantonchik1h@elpais.com",
+        "programme": "Accounts",
+        "courses": [
+            "Java",
+            "Appium"
+        ]
+    },
+    {
+        "id": 156,
+        "firstName": "Roberto",
+        "lastName": "Blacklidge",
+        "email": "rblacklidge1i@scientificamerican.com",
+        "programme": "Manual Testing",
+        "courses": [
+            "Cucumber",
+            "Appium"
+        ]
+    },
+    {
+        "id": 157,
+        "firstName": "Quintana",
+        "lastName": "Mateuszczyk",
+        "email": "qmateuszczyk1j@huffingtonpost.com",
+        "programme": "Accounts",
+        "courses": [
+            "Java",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 158,
+        "firstName": "Nomi",
+        "lastName": "Buscombe",
+        "email": "nbuscombe1k@state.gov",
+        "programme": "Manual Testing",
+        "courses": [
+            "Cucumber",
+            "C##"
+        ]
+    },
+    {
+        "id": 159,
+        "firstName": "Alie",
+        "lastName": "Bowsher",
+        "email": "abowsher1l@seattletimes.com",
+        "programme": "Automation Testing",
+        "courses": [
+            "Selenium",
+            "Appium"
+        ]
+    },
+    {
+        "id": 160,
+        "firstName": "Aldus",
+        "lastName": "Sherman",
+        "email": "asherman1m@who.int",
+        "programme": "Accounts",
+        "courses": [
+            "Java",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 161,
+        "firstName": "Jock",
+        "lastName": "Rope",
+        "email": "jrope1n@goodreads.com",
+        "programme": "Manual Testing",
+        "courses": [
+            "Cucumber",
+            "Appium"
+        ]
+    },
+    {
+        "id": 162,
+        "firstName": "Billye",
+        "lastName": "Font",
+        "email": "bfont1o@ucoz.ru",
+        "programme": "Manual Testing",
+        "courses": [
+            "Java",
+            "C##"
+        ]
+    },
+    {
+        "id": 163,
+        "firstName": "Keane",
+        "lastName": "Edgcumbe",
+        "email": "kedgcumbe1p@icio.us",
+        "programme": "Manual Testing",
+        "courses": [
+            "Java",
+            "C##"
+        ]
+    },
+    {
+        "id": 164,
+        "firstName": "Zed",
+        "lastName": "Absalom",
+        "email": "zabsalom1q@nymag.com",
+        "programme": "Manual Testing",
+        "courses": [
+            "Selenium",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 165,
+        "firstName": "Simmonds",
+        "lastName": "Laurand",
+        "email": "slaurand1r@epa.gov",
+        "programme": "Manual Testing",
+        "courses": [
+            "Java",
+            "C##"
+        ]
+    },
+    {
+        "id": 166,
+        "firstName": "Franny",
+        "lastName": "Wicks",
+        "email": "fwicks1s@sina.com.cn",
+        "programme": "Automation Testing",
+        "courses": [
+            "Cucumber",
+            "Appium"
+        ]
+    },
+    {
+        "id": 167,
+        "firstName": "Robena",
+        "lastName": "Venour",
+        "email": "rvenour1t@washington.edu",
+        "programme": "Accounts",
+        "courses": [
+            "Selenium",
+            "C##"
+        ]
+    },
+    {
+        "id": 168,
+        "firstName": "Petunia",
+        "lastName": "Blues",
+        "email": "pblues1u@freewebs.com",
+        "programme": "Accounts",
+        "courses": [
+            "Selenium",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 169,
+        "firstName": "Stanfield",
+        "lastName": "Sprakes",
+        "email": "ssprakes1v@skyrock.com",
+        "programme": "Manual Testing",
+        "courses": [
+            "Cucumber",
+            "Appium"
+        ]
+    },
+    {
+        "id": 170,
+        "firstName": "Rod",
+        "lastName": "Klementz",
+        "email": "rklementz1w@sina.com.cn",
+        "programme": "Accounts",
+        "courses": [
+            "Cucumber",
+            "Appium"
+        ]
+    },
+    {
+        "id": 171,
+        "firstName": "Hester",
+        "lastName": "Calvert",
+        "email": "hcalvert1x@quantcast.com",
+        "programme": "Accounts",
+        "courses": [
+            "Java",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 172,
+        "firstName": "Caria",
+        "lastName": "Ruddom",
+        "email": "cruddom1y@engadget.com",
+        "programme": "Manual Testing",
+        "courses": [
+            "Selenium",
+            "Appium"
+        ]
+    },
+    {
+        "id": 173,
+        "firstName": "Trudi",
+        "lastName": "Antosch",
+        "email": "tantosch1z@cocolog-nifty.com",
+        "programme": "Manual Testing",
+        "courses": [
+            "Cucumber",
+            "C##"
+        ]
+    },
+    {
+        "id": 174,
+        "firstName": "Marsha",
+        "lastName": "Waterdrinker",
+        "email": "mwaterdrinker20@nationalgeographic.com",
+        "programme": "Accounts",
+        "courses": [
+            "Java",
+            "Appium"
+        ]
+    },
+    {
+        "id": 175,
+        "firstName": "Kirstyn",
+        "lastName": "Gronowe",
+        "email": "kgronowe21@redcross.org",
+        "programme": "Manual Testing",
+        "courses": [
+            "Selenium",
+            "Appium"
+        ]
+    },
+    {
+        "id": 176,
+        "firstName": "Shelli",
+        "lastName": "Barthel",
+        "email": "sbarthel22@amazon.co.uk",
+        "programme": "Automation Testing",
+        "courses": [
+            "Selenium",
+            "Appium"
+        ]
+    },
+    {
+        "id": 177,
+        "firstName": "Milissent",
+        "lastName": "Critch",
+        "email": "mcritch23@canalblog.com",
+        "programme": "Automation Testing",
+        "courses": [
+            "Java",
+            "Appium"
+        ]
+    },
+    {
+        "id": 178,
+        "firstName": "Goldina",
+        "lastName": "Oakden",
+        "email": "goakden24@mediafire.com",
+        "programme": "Accounts",
+        "courses": [
+            "Selenium",
+            "Appium"
+        ]
+    },
+    {
+        "id": 179,
+        "firstName": "Gerard",
+        "lastName": "Reiach",
+        "email": "greiach25@samsung.com",
+        "programme": "Manual Testing",
+        "courses": [
+            "Cucumber",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 180,
+        "firstName": "Ezri",
+        "lastName": "Getsham",
+        "email": "egetsham26@cdbaby.com",
+        "programme": "Manual Testing",
+        "courses": [
+            "Selenium",
+            "C##"
+        ]
+    },
+    {
+        "id": 181,
+        "firstName": "Austin",
+        "lastName": "Veltman",
+        "email": "aveltman27@indiegogo.com",
+        "programme": "Automation Testing",
+        "courses": [
+            "Java",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 182,
+        "firstName": "Lizabeth",
+        "lastName": "De Biasi",
+        "email": "ldebiasi28@nsw.gov.au",
+        "programme": "Manual Testing",
+        "courses": [
+            "Cucumber",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 183,
+        "firstName": "Griffin",
+        "lastName": "Dachs",
+        "email": "gdachs29@bigcartel.com",
+        "programme": "Manual Testing",
+        "courses": [
+            "Selenium",
+            "C##"
+        ]
+    },
+    {
+        "id": 184,
+        "firstName": "Muffin",
+        "lastName": "Guyon",
+        "email": "mguyon2a@webnode.com",
+        "programme": "Accounts",
+        "courses": [
+            "Selenium",
+            "Appium"
+        ]
+    },
+    {
+        "id": 185,
+        "firstName": "Ferrell",
+        "lastName": "Rowlstone",
+        "email": "frowlstone2b@mayoclinic.com",
+        "programme": "Accounts",
+        "courses": [
+            "Selenium",
+            "Appium"
+        ]
+    },
+    {
+        "id": 186,
+        "firstName": "Matti",
+        "lastName": "Dumbarton",
+        "email": "mdumbarton2c@mayoclinic.com",
+        "programme": "Accounts",
+        "courses": [
+            "Selenium",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 187,
+        "firstName": "Chrissy",
+        "lastName": "Retchford",
+        "email": "cretchford2d@seesaa.net",
+        "programme": "Manual Testing",
+        "courses": [
+            "Selenium",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 188,
+        "firstName": "Hans",
+        "lastName": "Crighton",
+        "email": "hcrighton2e@patch.com",
+        "programme": "Manual Testing",
+        "courses": [
+            "Selenium",
+            "C##"
+        ]
+    },
+    {
+        "id": 189,
+        "firstName": "Bunni",
+        "lastName": "Stenett",
+        "email": "bstenett2f@elegantthemes.com",
+        "programme": "Manual Testing",
+        "courses": [
+            "Java",
+            "C##"
+        ]
+    },
+    {
+        "id": 190,
+        "firstName": "Maurizia",
+        "lastName": "Longworthy",
+        "email": "mlongworthy2g@indiatimes.com",
+        "programme": "Accounts",
+        "courses": [
+            "Selenium",
+            "C##"
+        ]
+    },
+    {
+        "id": 191,
+        "firstName": "Pamelina",
+        "lastName": "Northam",
+        "email": "pnortham2h@army.mil",
+        "programme": "Automation Testing",
+        "courses": [
+            "Selenium",
+            "C##"
+        ]
+    },
+    {
+        "id": 192,
+        "firstName": "Mae",
+        "lastName": "Jury",
+        "email": "mjury2i@shareasale.com",
+        "programme": "Automation Testing",
+        "courses": [
+            "Selenium",
+            "C##"
+        ]
+    },
+    {
+        "id": 193,
+        "firstName": "Karilynn",
+        "lastName": "Colter",
+        "email": "kcolter2j@webmd.com",
+        "programme": "Accounts",
+        "courses": [
+            "Selenium",
+            "C##"
+        ]
+    },
+    {
+        "id": 194,
+        "firstName": "Korella",
+        "lastName": "Hollington",
+        "email": "khollington2k@livejournal.com",
+        "programme": "Accounts",
+        "courses": [
+            "Selenium",
+            "Appium"
+        ]
+    },
+    {
+        "id": 195,
+        "firstName": "Matthus",
+        "lastName": "Bride",
+        "email": "mbride2l@washington.edu",
+        "programme": "Automation Testing",
+        "courses": [
+            "Cucumber",
+            "C##"
+        ]
+    },
+    {
+        "id": 196,
+        "firstName": "Patsy",
+        "lastName": "Cantos",
+        "email": "pcantos2m@wufoo.com",
+        "programme": "Accounts",
+        "courses": [
+            "Selenium",
+            "Appium"
+        ]
+    },
+    {
+        "id": 197,
+        "firstName": "Allix",
+        "lastName": "Cluer",
+        "email": "acluer2n@dmoz.org",
+        "programme": "Accounts",
+        "courses": [
+            "Selenium",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 198,
+        "firstName": "Katee",
+        "lastName": "Lowres",
+        "email": "klowres2o@devhub.com",
+        "programme": "Accounts",
+        "courses": [
+            "Selenium",
+            "Appium"
+        ]
+    },
+    {
+        "id": 199,
+        "firstName": "Benedikta",
+        "lastName": "Le Noury",
+        "email": "blenoury2p@icq.com",
+        "programme": "Accounts",
+        "courses": [
+            "Java",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 200,
+        "firstName": "Damon",
+        "lastName": "Brockelsby",
+        "email": "dbrockelsby2q@bandcamp.com",
+        "programme": "Automation Testing",
+        "courses": [
+            "Selenium",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 201,
+        "firstName": "Yorgos",
+        "lastName": "Risebarer",
+        "email": "yrisebarer2r@fc2.com",
+        "programme": "Accounts",
+        "courses": [
+            "Java",
+            "Rest Assured"
+        ]
+    },
+    {
+        "id": 203,
+        "firstName": "PrimUser7997",
+        "lastName": "PrimeUser9641",
+        "email": "4430xyz@gmail.com",
         "programme": "Api Testing",
         "courses": [
             "Scala",
@@ -1377,19 +2445,66 @@ Date: Sat, 04 Jun 2022 16:02:09 GMT
         ]
     },
     {
-        "id": 105,
-        "firstName": "PrimUser16198",
-        "lastName": "PrimeUser77982",
-        "email": "38739xyz@gmail.com",
+        "id": 210,
+        "firstName": "Prime",
+        "lastName": "prime1",
+        "email": "prime1@gmail.com",
+        "programme": "Computer Science",
+        "courses": [
+            "JAVA"
+        ]
+    },
+    {
+        "id": 211,
+        "firstName": "Prime2",
+        "lastName": "prime3",
+        "email": "prime2@gmail.com",
         "programme": "Api Testing",
         "courses": [
-            "Scala",
-            "Java"
+            "Python"
+        ]
+    },
+    {
+        "id": 212,
+        "firstName": "Prime",
+        "lastName": "prime1",
+        "email": "98055prime1@gmail.com",
+        "programme": "Computer Science",
+        "courses": [
+            "JAVA"
+        ]
+    },
+    {
+        "id": 213,
+        "firstName": "Prime2",
+        "lastName": "prime3",
+        "email": "73004prime2@gmail.com",
+        "programme": "Api Testing",
+        "courses": [
+            "Python"
+        ]
+    },
+    {
+        "id": 214,
+        "firstName": "Prime",
+        "lastName": "prime1",
+        "email": "77067prime1@gmail.com",
+        "programme": "Computer Science",
+        "courses": [
+            "JAVA"
+        ]
+    },
+    {
+        "id": 215,
+        "firstName": "Prime2",
+        "lastName": "prime3",
+        "email": "20547prime2@gmail.com",
+        "programme": "Api Testing",
+        "courses": [
+            "Python"
         ]
     }
 ]
 ]]></system-out>
-    <system-err><![CDATA[4915 [main] INFO net.serenitybdd.rest.decorators.request.RequestSpecificationDecorated - No BaseStepListener, GET /list not registered.
-]]></system-err>
   </testcase>
 </testsuite>

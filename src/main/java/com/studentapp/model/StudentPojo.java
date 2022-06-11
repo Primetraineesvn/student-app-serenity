@@ -1,5 +1,6 @@
 package com.studentapp.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -62,5 +63,12 @@ public class StudentPojo {
         studentPojo.setProgramme(programme);
         studentPojo.setCourses(courses);
         return studentPojo;
+    }
+
+    public static List<String> getCourcesList(String str, String str1){
+        List<String> course = new ArrayList<>();
+        course.add(str);
+        course.add(str1);
+        return course;
     }
 }

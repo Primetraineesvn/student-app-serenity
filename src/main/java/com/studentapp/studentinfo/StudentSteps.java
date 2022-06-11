@@ -18,12 +18,8 @@ public class StudentSteps {
     @Step("Creating student with firstName : {0}, lastName: {1}, email: {2}, programme: {3} and courses: {4}")
     public ValidatableResponse createStudent(String firstName, String lastName, String email,
                                              String programme, List<String> courseList) {
-        StudentPojo studentPojo = new StudentPojo();
-        studentPojo.setFirstName(firstName);
-        studentPojo.setLastName(lastName);
-        studentPojo.setEmail(email);
-        studentPojo.setProgramme(programme);
-        studentPojo.setCourses(courseList);
+        StudentPojo studentPojo = StudentPojo.getStudentPojo(firstName,lastName,email,programme,courseList);
+
         return SerenityRest.given().log().all()
                 .contentType(ContentType.JSON)
                 .body(studentPojo)
@@ -49,12 +45,7 @@ public class StudentSteps {
     @Step("Updating student information with studentId: {0}, firstName: {1}, lastName: {2}, email: {3}, programme: {4} and courses: {5}")
     public ValidatableResponse updateStudent(int studentId, String firstName, String lastName, String email,
                                              String programme, List<String> courseList) {
-        StudentPojo studentPojo = new StudentPojo();
-        studentPojo.setFirstName(firstName);
-        studentPojo.setLastName(lastName);
-        studentPojo.setEmail(email);
-        studentPojo.setProgramme(programme);
-        studentPojo.setCourses(courseList);
+        StudentPojo studentPojo = StudentPojo.getStudentPojo(firstName,lastName,email,programme,courseList);
         return SerenityRest.given().log().all()
                 .header("Content-Type", "application/json")
                 .pathParam("studentID", studentId)
@@ -80,6 +71,29 @@ public class StudentSteps {
                 .when()
                 .get(EndPoints.GET_SINGLE_STUDENT_BY_ID)
                 .then();
+    }
+
+    @Step("Getting all students information")
+    public ValidatableResponse getAllStudentsInfo(){
+        return SerenityRest.given().log().all()
+                .when()
+                .get(EndPoints.GET_ALL_STUDENT)
+                .then();
+    }
+
+
+    @Step("Getting the student information with email: {0}")
+    public HashMap<String, Object> getStudentInfoByEmail(String email) {
+        String p1 = "findAll{it.email=='";
+        String p2 = "'}.get(0)";
+        HashMap<String, Object> studentMap = SerenityRest.given().log().all()
+                .when()
+                .get(EndPoints.GET_ALL_STUDENT)
+                .then()
+                .statusCode(200)
+                .extract()
+                .path(p1 + email + p2);
+        return studentMap;
     }
 
 }
